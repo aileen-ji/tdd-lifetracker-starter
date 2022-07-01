@@ -2,7 +2,7 @@ const { BadRequestError, UnauthorizedError, NotFoundError} = require("../utils/e
 const db = require("../db")
 
 class Nutrition {
-    static async createNutrition(info){
+    static async createNutrition({info, user}){
         const requiredFields = ["name", "category", "calories", "imageUrl"]
         requiredFields.forEach(field => {
             if (!info.hasOwnProperty(field)){

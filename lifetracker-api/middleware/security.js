@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken")
-const SECRET_KEY = require("../config")
+const {SECRET_KEY} = require("../config")
 const {UnauthorizedError} = require("../utils/errors")
 
 //create a function to extract the JWT from the request header
@@ -35,12 +35,12 @@ const requireAuthenticatedUser = (req, res, next) => {
             throw new UnauthorizedError()
         }
         return next()
-    }catch(err) {
-        return next(err)
+    }catch(error) {
+        return next(error)
     }
 }
 
 module.exports = {
     extractUserFromJwt,
-    requireAuthenticatedUser
+    requireAuthenticatedUser,
 }

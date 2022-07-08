@@ -72,7 +72,7 @@ icons8(https://icons8.com/)
 
 Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
 
-Shout out to my pod for being supportive!
+Shout out to my pod for being supportive! Also shout out to James and Kiara for helping me figure out heroku.
 
 ## Goals
 
